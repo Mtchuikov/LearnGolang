@@ -21,6 +21,7 @@ func progressBar() {
 		panic("Err!")
 	}
 	defer keyboard.Close()
+	
 	go func() {
 		for {
 			counter = <-cProgress / 10
@@ -28,6 +29,7 @@ func progressBar() {
 			barElements = append(barElements, strings.Repeat("=", counter))
 		}
 	}()
+	
 	go func() {
 		for counter <= 100 {
 			if counter == 100 {
@@ -40,6 +42,7 @@ func progressBar() {
 			}
 		}
 	}()
+	
 	go func() {
 		for {
 			char, _, err := keyboard.GetSingleKey()
@@ -52,6 +55,7 @@ func progressBar() {
 			}
 		}
 	}()
+	
 	go func() {
 		stop = <-cCommand
 	}()
