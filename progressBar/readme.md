@@ -1,3 +1,3 @@
 Простенький прогрес бар, который я написал для закрепления знаний о работе с горутинами и каналами. 
 
-![image](https://user-images.githubusercontent.com/71787586/124618180-403f4300-de80-11eb-9899-d3c3eca6f3e7.png)
+![Uploading image.png…]()
